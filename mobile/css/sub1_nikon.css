@@ -1,0 +1,83 @@
+/* ########################################
+SUB VISUAL 
+#########################################*/
+
+.subvisual .quickmenu .nikonimgkorea{
+    background: #f8d823;
+}
+
+.subvisual .quickmenu .nikonimgkorea a{
+    width: 100%;
+    padding: 7px;
+    color: white;
+    font-weight: 600;
+}
+
+.subvisual .quickmenu .history{}
+.subvisual .quickmenu .way{}
+
+/* ########################################
+SUB1_NIKON SECTION 
+#########################################*/
+
+#content{
+    overflow: hidden;
+}
+
+.imgingK{
+    overflow: hidden;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+.imgingK h4{
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.imgingK .imging_subtext1{
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 100;
+    color: #666;
+    font-size: 14px;
+}
+
+.imgingK .imging_img2{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    margin-bottom: 30px;
+}
+
+.imgingK .imging_subtext2{
+    display: block;
+    width: 80%;
+    line-height: 1.8em;
+    text-align: left;
+    word-break: keep-all;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.imgingK .imging_img3{
+    width: 80%;
+    margin: 10px auto;
+    margin-bottom: 30px;
+}
+
+.imgingK .imging_subtext3{
+    display: block;
+    width: 80%;
+    line-height: 1.8em;
+    text-align: left;
+    word-break: keep-all;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 16px;
+}

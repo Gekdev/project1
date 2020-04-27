@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>info</title>
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link href="common/css/common.css" rel="stylesheet">
+<link href="common/css/sub.css" rel="stylesheet">
+<link href="css/sub1_map.css" rel="stylesheet">
+
+<script src="common/js/jquery-1.12.4.min.js"></script>
+<script src="common/js/jquery-migrate-1.4.1.min.js"></script>
+<script src="common/js/prefixfree.min.js"></script>
+<script src="common/js/common.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=40be61d9d42ae1da9b6b37530766a836"></script>
+<script src="https://kit.fontawesome.com/cefbde467a.js" crossorigin="anonymous"></script>
+<script src="js/appstore.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e){}
+  // ]]>
+</script>
+ <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+
+    <? include 'common/header.html' ?>
+
+    <? include 'common/sub1.html' ?>
+
+<!-- SUB VISUAL START -->
+    <div class="subvisual">
+        <h2 class="hidden">본문콘텐츠</h2>
+        <h3>about NIKON</h3> 
+        <img src="images/sub1/sub1_main4.jpg" alt="">
+        <div class="quickmenu">
+            <div class="nikonimgkorea">
+                <a href="sub1_nikon.html">니콘 이미징 코리아</a>
+            </div>
+            <div class="history">
+                <a href="sub1_corpdata.html">회사 연혁</a>
+            </div>
+            <div class="way">
+                <a href="sub1_map.html">찾아오시는 길</a>
+            </div>
+        </div>
+    </div>
+<!-- SUB VISUAL END -->
+
+    <article id="content">
+        <div class="mapping">
+            <h4>찾아오시는 길</h4>
+            <span class="imging_subtext1">Location</span>
+            <div id="map"></div>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=40be61d9d42ae1da9b6b37530766a836&libraries=services"></script>
+            <!-- <script>
+                var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+                var options = { //지도를 생성할 때 필요한 기본 옵션
+                    center: new kakao.maps.LatLng(37.505962, 127.056137), //지도의 중심좌표.
+                    level: 3 //지도의 레벨(확대, 축소 정도)
+                };
+
+                var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+            </script> -->
+            <script>
+                window.onload = function() {
+                var container = document.getElementById('map');
+                var options = {
+                    center: new daum.maps.LatLng(37.505962, 127.056137),
+                    level: 2
+                };
+
+                var map = new daum.maps.Map(container, options);
+
+                var mapTypeControl = new daum.maps.MapTypeControl();
+                map.addControl(mapTypeControl, daum.maps.ControlPosition.TOPRIGHT);
+
+                var zoomControl = new daum.maps.ZoomControl();
+                map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
+
+                var markerPosition  = new daum.maps.LatLng(37.505962, 127.056137); 
+                var marker = new daum.maps.Marker({
+                    position: markerPosition
+                });
+
+                marker.setMap(map);
+
+                var overlay = new daum.maps.CustomOverlay({
+                    map: map,
+                    position: marker.getPosition()       
+                });
+                }
+            </script>
+            <ul class="corpinfo">
+                <li><strong>회사명</strong><br/> 주식회사 니콘이미징코리아</li>
+                <li><strong>연락처</strong><br/> Tel. 080-800-6600 Fax. 02-2068-8488</li>
+                <li><address><strong>주소</strong><br> 서울특별시 강남구 테헤란로 440 포스코센터 서관 14층 (대치동 892) (우편번호 : 06194)</address></li>
+            </ul>
+        </div>
+        
+        <a class="topMove" href="javascript:void(0);">
+            <span class="hidden">top</span>
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </article>
+
+    <? include 'common/footer.html' ?>
+
+</div>
+</body>
+</html>

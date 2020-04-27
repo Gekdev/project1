@@ -1,0 +1,140 @@
+.imgback:before {
+    background: url(../images/back/back5.jpg) no-repeat center center;
+}
+
+.character_sec{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+}
+
+.character_sec::before{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    transform: translate(-50%, 0);
+    background: linear-gradient(135deg, #f6e3b0 0%,#daa75f 100%)
+}
+
+.character_sec > span{
+    display: block;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: white;
+}
+
+.character_sec ul{
+    width: 80%;
+    margin: 10% 10%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.character_sec ul li{
+    width: 19%;
+    box-sizing: border-box;
+    margin: 0 .5%;
+    float: left;
+    overflow: hidden;  
+    transition: all 1s;
+    opacity: 0;
+}
+
+.character_sec ul li.on{
+    opacity: 1;
+}
+
+.character_sec ul li .cover_img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.character_sec ul li:hover{
+    box-shadow: 5px 5px 20px #000;
+}
+
+.character_sec ul li img{
+    width: 100%;
+    transition: all 1s;
+}
+
+.character_sec ul li:hover img{
+    transform: scale(1.1)
+}
+
+.character_sec ul li span{
+    display: block;
+    padding: 15px 0;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'Merriweather', serif;
+}
+
+.character_sec ul li p{
+    word-break: keep-all;
+    color: #fff;
+    padding: 0 10px;
+}
+
+
+@media screen and (max-width: 1280px){
+    .character_sec ul{
+        width: 90%;
+        margin: 5%;
+    }
+    .character_sec::before{
+        display: none;
+    }
+
+    .character_sec ul li p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .character_sec ul li {
+        width: 32%;
+    }
+    
+    .character_sec ul li p{
+        font-size: 14px;
+    }
+    
+    .character_sec ul li.char_maximus{
+        margin-left: 133px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.character_sec ul li{
+        width: 49%;
+    }
+    
+    .character_sec ul li.char_maximus{
+        margin-left: 0.5%;
+    }
+    
+    .character_sec ul li.char_pascal{
+        margin-left: 160px;
+    }
+    
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap {min-width:320px;}
+    .character_sec ul li{
+        width: 99%;
+        margin-bottom: 80px;
+    }
+    
+    .character_sec ul li.char_pascal{
+        margin-left: 0.5%;
+    }
+    
+}

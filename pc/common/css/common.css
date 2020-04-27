@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+/* ########################################
+CSS RESET
+#########################################*/
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{
+    display: block;
+}
+
+body,input,textarea,select,button,table{
+    font-family:'돋움', Dotum, '굴림', Gulim, AppleGothic, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+
+address{
+    font-style: normal;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+img{
+    border: 0; vertical-align: top;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+/* ########################################
+SKIP NAV
+#########################################*/
+
+#skipNav{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 990;
+}
+
+#skipNav a{
+    display: block; 
+    height: 1px; 
+    margin-bottom: -1px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+/*    color: white; 안바뀌는 이유좀 ㅠㅠ */
+    font-size:12px;
+}
+
+#skipNav a:hover, #skipNav a:focus, #skipNav a:active{
+    display: block;
+    height: auto;
+    padding: 5px 0px;
+    background: #8e9f49;
+}
+
+/* ########################################
+HIDDEN
+#########################################*/
+
+.hidden{
+    display: block; 
+    position: absolute;
+    top: 0;
+    left: -1000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: white;
+}
+
+/* ########################################
+COMMON WRAPPER
+#########################################*/
+
+#wrapper{
+    overflow: hidden;
+}
+
+#content{
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+/* ########################################
+HEADER
+#########################################*/
+
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    background: #fff;
+}
+
+header > #wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header > #wrapper:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+#wrapper > h1{
+    width: 130px;
+    height: 60px;
+    overflow: hidden;
+    float: left;
+    margin-left: 535px;
+}
+
+#wrapper > h1 > a{
+    display: block;
+    width: 120px;
+    height: 50px;
+    margin: 5px auto;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/logo/logo.png) no-repeat;
+}
+
+#wrapper .login{
+    width: 130px;
+    height: 30px;
+    margin: 15px;
+    float: right;
+    color: black;
+}
+
+#wrapper > nav{
+    width: 850px;
+    height: 40px;
+    transition: 0.5s;
+    overflow: hidden;
+    float: left;
+    margin-left: 175px;
+}
+
+#wrapper > nav:hover{
+    height: 180px;
+    background: #fff;
+}
+
+#wrapper > nav:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+#wrapper > nav > ul{
+    float: left;
+    text-align: center;
+}
+
+#wrapper > nav > ul > li{
+    width: 170px;
+    height: 40px;
+    float: left;
+    transition: 1s;
+}
+
+#wrapper > nav > ul > li > h3{
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    transition: 1s;
+}
+
+#wrapper > nav > ul > li:hover > h3 a{
+    color: white;
+}
+
+#wrapper > nav > ul > li > h3 a:focus{
+    color: white;
+}
+
+#wrapper > nav:focus-within{
+    height: 180px;
+    background: #fff;
+}
+
+#wrapper > nav > ul > li:focus-within a{
+    color: white
+}
+
+#wrapper > nav > ul > li > h3 > a{
+    display: block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 8px;
+}
+
+#wrapper > nav > ul > li > .dropdown{
+    width: 170px;
+    height: auto;
+}
+
+#wrapper > nav > ul > li > .dropdown > li{
+    padding: 5px;
+    font-size: 14px;
+}
+
+#wrapper > nav > ul > li > .dropdown > li a{
+    display: block;
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    color: #333;
+}
+
+#wrapper > nav > ul > li > .dropdown > li:hover a{
+    color: red;
+}
+
+/* ########################################
+FOOTER
+#########################################*/
+
+footer{
+    overflow: hidden;
+    width: 100%;
+    height: 550px;
+    background: #333333;
+}
+
+#ft_wrapper_1200{
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    height: auto;
+    margin: 30px auto;
+}
+
+.foot-sec{
+    width: auto;
+    height: auto;
+    margin: 20px;
+    color: #bbbbbb;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+.foot-sec a{
+    color: #bbbbbb;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer ul li{
+    margin: 10px 0px;
+}
+
+footer ul li:first-child{
+    font-size: 1.2rem;
+    margin: 30px 0px;
+    color: white;
+}
+
+.foot-logo{
+    width: 100px;
+    margin-bottom: 10px
+}
+
+.facebook a{
+    font-size: 1.5rem;
+    width: 30px;
+}
+
+.instagram a{
+    font-size: 1.5rem;
+    width: 30px;
+}
+
+.twitter a{
+    font-size: 1.5rem;
+    width: 30px;
+}
+
+.youtube a{
+    font-size: 1.5rem;
+    width: 30px;
+}
+
+.foot-sec a:hover{
+    color: white;
+}
+
+.foot-num{
+    font-size: 30px;
+}
+
+.foot-line{
+    width: 1100px;
+    height: 1px;
+    margin: 60px auto;
+    background: #555555;
+    margin-top: 70px;
+}
+
+.foot-copy{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    color: #bbbbbb
+}

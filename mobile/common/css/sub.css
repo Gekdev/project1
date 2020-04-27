@@ -1,0 +1,70 @@
+/* ########################################
+SUB NAVIGATION
+#########################################*/
+
+.subnav{
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0.9em;
+    margin-top: 60px;
+}
+
+/* ########################################
+SUB VISUAL
+#########################################*/
+
+.subvisual{
+    overflow: hidden;
+}
+
+.subvisual h2{}
+
+.subvisual h3{
+    height: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 20px;
+    line-height: 50px;
+    border-bottom: 1px solid gray;
+}
+
+.subvisual img{
+    display: block;
+    width: 100%;
+}
+
+.subvisual .quickmenu{
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.subvisual .quickmenu div{
+    display: flex;
+    width: 25%;
+    height: 60px;
+    margin: 1%;
+    background: #f7f7f7;
+    word-break: keep-all;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+}
+
+/* ########################################
+ANIMATION
+#########################################*/
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    }
+    
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

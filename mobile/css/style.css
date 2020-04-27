@@ -1,0 +1,283 @@
+/* ########################################
+BANNER
+#########################################*/
+
+.visual{
+    padding-top: 60px;
+    background: #000;
+}
+
+/* ########################################
+ICON MENU
+#########################################*/
+
+#content{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#content .iconS{
+    overflow: hidden;
+    padding: 50px 0px;
+}
+
+#content .iconS h3{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px
+}
+
+#content .iconS .quickMenu{
+    display: flex;
+    flex-flow: wrap;
+}
+
+#content .iconS .quickMenu a{
+    width: 31.33%;
+    text-align: center;
+    margin: 1% 1%;
+    padding: 2% 0;
+    background: #f7f7f7;
+}
+
+#content .iconS .quickMenu a i{
+    width: 80%;
+    font-size: 1.8em;
+    margin: 5%;
+    color: #444;
+}
+
+#content .iconS .quickMenu a span{
+    display: block;
+    font-size: 12px;
+    margin: 5%;
+}
+
+/* ########################################
+EVENT
+#########################################*/
+
+#content .eventS{
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+#content .eventS h3{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+#content .eventS .event{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#content .eventS .event li img{
+    width: 90%;
+    margin: 0 5%;
+    margin-bottom: 30px;
+}
+
+#content .eventS .event li span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+#content .eventS .event li span:last-child{
+    font-weight: 200;
+    font-size: 14px;
+}
+
+/* ########################################
+PRODUCT
+#########################################*/
+
+#content .productS{
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+#content .productS h3{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#content .productS .tabs{
+    position: relative;
+} 
+
+#content .productS .tabs li .tab{
+    position: absolute;
+    display: block;
+    width: 50%;
+    text-align: center; 
+    font-size: 16px;
+    color: #000;
+    background: #fff; 
+    padding: 12px 0;
+}
+
+#content .productS .tabs li .tab1{
+    top: 0;
+    left: 0;
+}
+
+#content .productS .tabs li .tab2{
+    top: 0;
+    right: 0;
+}
+
+#content .productS .tabs li .contlist{ 
+    padding-top: 50px;
+    width: 100%;
+    display: none;
+    line-height: 1.5em;
+    overflow: hidden;
+} 
+
+#content .productS .tabs li .contlist li{
+    width: 48%;
+    margin: 1%;
+    background-color: #f7f7f7;
+    text-align: center;
+    float: left;
+}
+
+#content .productS .tabs li .contlist li a{
+    display: block;
+    overflow: hidden;
+    color: #333;
+    padding: 20px 0px;
+}
+
+#content .productS .tabs li .contlist li a img{
+    display: block;
+    width: 100%;
+}
+
+#content .productS .tabs li .contlist li a span{
+    display: block;
+    height: 20px;
+    font-size: 13px;
+    font-weight: 200;
+    word-break: keep-all;
+}
+
+#content .productS .tabs li .contlist li a .product_title{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 15px 0px;
+}
+
+/* ########################################
+PICTURE
+#########################################*/
+
+#content .pictureS{
+    overflow: hidden;
+}
+
+#content .pictureS h3{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#content .pictureS ul{
+    text-align: center;
+}
+
+#content .pictureS ul li{
+    display: block;
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+}
+
+#content .pictureS ul li a{
+    display: block;
+    color: white;
+}
+
+#content .pictureS ul li a.photoGallery{
+    background: url(../images/gallery/gallery1.jpg) center;
+    font-size: 18px;
+}
+
+#content .pictureS ul li a.nikonGallery{
+    background: url(../images/gallery/gallery2.jpg) center;
+    font-size: 18px;
+}
+
+/* ########################################
+NOTICE
+#########################################*/
+
+.noticeBox{
+    height:50px;
+    background:#000; 
+    margin-top: 30px
+}
+
+.noticeBox .notice_con{
+    position:relative;
+    top:10px;
+    height:30px; 
+    margin:0 15px;
+    line-height:1em; 
+    border-radius:7px; 
+    background:#fff;
+}
+
+#content .noticeBox .notice_con h3{
+    font-size:13px; 
+    font-weight:bold; 
+    color:#5c5c5c; 
+    padding:8px 6%;
+    line-height:1em; 
+    text-align:left;
+}
+
+.noticeBox .notice_con .slide_box{
+    position:absolute;
+    top:7px;
+    left:30%;
+    width:67%;
+    height:13px; 
+    overflow:hidden; 
+}
+
+.noticeBox .notice_con .slide_box .slide{
+    position:absolute;
+}
+
+.noticeBox .notice_con .slide ul{
+    font-size:12px;
+}
+
+.noticeBox .notice_con .slide ul li{
+    height:13px; 
+    overflow:hidden; 
+    text-overflow:clip; 
+    -o-text-overflow:clip; 
+    margin-bottom:5px;
+}

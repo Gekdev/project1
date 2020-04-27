@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>corporate Data</title>
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link href="common/css/common.css" rel="stylesheet">
+<link href="common/css/sub.css" rel="stylesheet">
+<link href="css/sub1_corpdata.css" rel="stylesheet">
+
+<script src="common/js/jquery-1.12.4.min.js"></script>
+<script src="common/js/jquery-migrate-1.4.1.min.js"></script>
+<script src="common/js/prefixfree.min.js"></script>
+<script src="common/js/common.js"></script>
+<script src="js/history_tap.js"></script>
+<script src="https://kit.fontawesome.com/cefbde467a.js" crossorigin="anonymous"></script>
+<script src="js/appstore.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e){}
+  // ]]>
+</script>
+<script>
+    //tap
+    function openHistory(evt, hisage){
+    let i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++){
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++){
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(hisage).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+
+</script>
+ <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<? include 'common/header.html' ?>
+
+<? include 'common/sub1.html' ?>
+
+<!-- SUB VISUAL START -->
+    <div class="subvisual">
+        <h2 class="hidden">본문콘텐츠</h2>
+        <h3>about NIKON</h3> 
+        <img src="images/sub1/sub1_main2.jpg" alt="">
+        <div class="quickmenu">
+            <div class="nikonimgkorea">
+                <a href="sub1_nikon.html">니콘 이미징 코리아</a>
+            </div>
+            <div class="history">
+                <a href="sub1_corpdata.html">회사 연혁</a>
+            </div>
+            <div class="way">
+                <a href="sub1_map.html">찾아오시는 길</a>
+            </div>
+        </div>
+    </div>
+<!-- SUB VISUAL END -->
+
+<!--CONTENT START-->
+    <article id="content">
+        <h4>회사 연혁</h4>
+        <div class="his_tab">
+            <button class="tablinks" onclick="openHistory(event, 'a_1917')" id="defaultOpen">1917-</button>
+            <button class="tablinks" onclick="openHistory(event, 'a_1946')">1946-</button>
+            <button class="tablinks" onclick="openHistory(event, 'a_1980')">1980-</button>
+            <button class="tablinks" onclick="openHistory(event, 'a_1999')">1999-</button>
+        </div>
+          
+        <div id="a_1917" class="tabcontent">
+            <h5>Aim for the light</h5>
+            <span class="years">- 1917 - </span>
+            <img src="images/sub1/sub1_his1.jpg" alt="1917s">
+            <p class="his_subtit">"광학기기의 국내 생산과 <br> 광학기기의 원제조"</p>
+            <p class="his_text">20세기 초 일본이 근대화에 나서면서 유럽을 따라잡는 게 과제였다.
+                일본 산업의 발전은 모든 분야에서 절실한 필요성이었고, 첨단 기술이 중요한 광학 산업에서는 특히 시급한 문제였다.</p>
+            <div class="his_1917s">
+                <div class="h1917">
+                    <span>1917</span>
+                    <img src="images/sub1/sub1_his1_img1.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>닛폰 코가쿠가 성립한 니콘</strong></p>
+                    <p class="subtit_cont">당시 니콘 본사는 도쿄 도 고이시카와 구 하라마치 120번지(현립 하쿠산 4쵸메, 분쿄 구)에 있는 도쿄 게이키 회사 내에 있었다.</p>
+                </div> 
+                <div class="h1917">
+                    <span>1918</span>
+                    <img src="images/sub1/sub1_his1_img2.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>오이공장에서 광학유리 생산 시작</strong></p>
+                    <p class="subtit_cont">1918년 이 회사는 광학유리 연구를 시작했으나 몇 가지 기술적 문제를 완전히 해결할 수 없게 되자 가동을 중단했다. 그러나 1922년, 국내 광기기의 생산을 공급하기 위한 광유리의 자급자족이 필요하게 되자 연구가 본격적으로 재개되었다.</p>
+                </div>
+                <div class="h1917">
+                    <span>1921</span>
+                    <img src="images/sub1/sub1_his1_img3.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>MIKRON 4x, 6x 초소형 쌍안경 시판</strong></p>
+                    <p class="subtit_cont">1921년형 MIKRON 초소형 쌍안경은 니콘이 개발, 설계, 제조한 최초의 쌍안형 모델 중 하나이다. 이들은 컴팩트함과 높은 기능성으로 호평을 받았으며, 1948년과 1997년 판매를 위해 복제된 이후 여전히 인기 있는 모델이다.</p>
+                </div>
+                <div class="h1917">
+                    <span>1932</span>
+                    <img src="images/sub1/sub1_his1_img4.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>NIKKOR를 카메라 렌즈의 상표명으로 채택</strong></p> 
+                    <p class="subtit_cont">NIKKOR 렌즈는 국내적으로 사진 렌즈를 제작하고 싶은 일본 디자이너들의 강한 열망에서 탄생했는데, 그 때까지 한국은 다른 나라에 의존해 왔다. 디자이너들은 광학 산업을 관찰하기 위해 유럽에 갔고, 베를린의 카메라 매장을 방문한 후 사진 렌즈에 대한 정보를 수집하는 데 시간을 할애했다. 마침내 견본을 입수하고 디자이너들은 일본으로 돌아갔는데, 이때가 진정한 투쟁의 시작이었다.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="a_1946" class="tabcontent">
+            <h4>Building tomorrow</h4>
+            <span class="years">- 1946 - </span>
+            <img src="images/sub1/sub1_his2.jpg" alt="1917s">
+            <p class="his_subtit">"세계 광학 기기 제조업체로 도약"</p>
+            <p class="his_text">일본은 전후 복구와 성장을 기적적인 속도로 경험하면서 많은 제품이 다른 나라에 보급되었다. 니콘의 광학 장비 성능은 높은 평가를 받았으며, "메이드 인 재팬"의 새롭고 우수한 품질에 대한 세계인식을 창출하는 데 중요한 역할을 했다.</p>
+            <div class="his_1917s">
+                <div class="h1917">
+                    <span>1946</span>
+                    <img src="images/sub1/sub1_his1_img1.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>니콘의 기원은, 닛폰 코가쿠 K.K.가 성립했다</strong></p>
+                    <p class="subtit_cont">당시 니콘 본사는 도쿄 도 고이시카와 구 하라마치 120번지(현립 하쿠산 4쵸메, 분쿄 구)에 있는 도쿄 게이키 회사 내에 있었다.</p>
+                </div> 
+                <div class="h1917">
+                    <span>1918</span>
+                    <img src="images/sub1/sub1_his1_img2.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>오이다이이치공장(현 오이공장)이 완공되어 광학유리 생산이 시작되었다.</strong></p>
+                    <p class="subtit_cont">1918년 이 회사는 광학유리 연구를 시작했으나 몇 가지 기술적 문제를 완전히 해결할 수 없게 되자 가동을 중단했다. 그러나 1922년, 국내 광기기의 생산을 공급하기 위한 광유리의 자급자족이 필요하게 되자 연구가 본격적으로 재개되었다.</p>
+                </div>
+                <div class="h1917">
+                    <span>1921</span>
+                    <img src="images/sub1/sub1_his1_img3.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>MIKRON 4x, 6x 초소형 쌍안경 시판</strong></p>
+                    <p class="subtit_cont">1921년형 MIKRON 초소형 쌍안경은 니콘이 개발, 설계, 제조한 최초의 쌍안형 모델 중 하나이다. 이들은 컴팩트함과 높은 기능성으로 호평을 받았으며, 1948년과 1997년 판매를 위해 복제된 이후 여전히 인기 있는 모델이다.</p>
+                </div>
+                <div class="h1917">
+                    <span>1932</span>
+                    <img src="images/sub1/sub1_his1_img4.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>NIKKOR가 카메라 렌즈의 상표명으로 채택되었다.</strong></p>
+                    <p class="subtit_cont">NIKKOR 렌즈는 국내적으로 사진 렌즈를 제작하고 싶은 일본 디자이너들의 강한 열망에서 탄생했는데, 그 때까지 한국은 다른 나라에 의존해 왔다. 디자이너들은 광학 산업을 관찰하기 위해 유럽에 갔고, 베를린의 카메라 매장을 방문한 후 사진 렌즈에 대한 정보를 수집하는 데 시간을 할애했다. 마침내 견본을 입수하고 디자이너들은 일본으로 돌아갔는데, 이때가 진정한 투쟁의 시작이었다.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="a_1980" class="tabcontent">
+            <h4>Leaping ahead of the times</h4>
+            <span class="years">- 1980 - </span>
+            <img src="images/sub1/sub1_his3.jpg" alt="1917s">
+            <p class="his_subtit">"광학기기의 국내 생산과 <br> 광학기기의 원제조"</p>
+            <p class="his_text">20세기 초 일본이 근대화에 나서면서 유럽을 따라잡는 게 과제였다.
+                일본 산업의 발전은 모든 분야에서 절실한 필요성이었고, 첨단 기술이 중요한 광학 산업에서는 특히 시급한 문제였다.</p>
+            <div class="his_1917s">
+                <div class="h1917">
+                    <span>1917</span>
+                    <img src="images/sub1/sub1_his1_img1.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>니콘의 기원은, 닛폰 코가쿠 K.K.가 성립했다</strong></p>
+                    <p class="subtit_cont">당시 니콘 본사는 도쿄 도 고이시카와 구 하라마치 120번지(현립 하쿠산 4쵸메, 분쿄 구)에 있는 도쿄 게이키 회사 내에 있었다.</p>
+                </div> 
+                <div class="h1917">
+                    <span>1918</span>
+                    <img src="images/sub1/sub1_his1_img2.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>오이다이이치공장(현 오이공장)이 완공되어 광학유리 생산이 시작되었다.</strong><p>
+                    <p class="subtit_cont">1918년 이 회사는 광학유리 연구를 시작했으나 몇 가지 기술적 문제를 완전히 해결할 수 없게 되자 가동을 중단했다. 그러나 1922년, 국내 광기기의 생산을 공급하기 위한 광유리의 자급자족이 필요하게 되자 연구가 본격적으로 재개되었다.</p>
+                </div>
+                <div class="h1917">
+                    <span>1921</span>
+                    <img src="images/sub1/sub1_his1_img3.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>MIKRON 4x, 6x 초소형 쌍안경 시판</strong></p>
+                    <p class="subtit_cont">1921년형 MIKRON 초소형 쌍안경은 니콘이 개발, 설계, 제조한 최초의 쌍안형 모델 중 하나이다. 이들은 컴팩트함과 높은 기능성으로 호평을 받았으며, 1948년과 1997년 판매를 위해 복제된 이후 여전히 인기 있는 모델이다.</p>
+                </div>
+                <div class="h1917">
+                    <span>1932</span>
+                    <img src="images/sub1/sub1_his1_img4.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>NIKKOR가 카메라 렌즈의 상표명으로 채택되었다.</strong></p>
+                    <p class="subtit_cont">NIKKOR 렌즈는 국내적으로 사진 렌즈를 제작하고 싶은 일본 디자이너들의 강한 열망에서 탄생했는데, 그 때까지 한국은 다른 나라에 의존해 왔다. 디자이너들은 광학 산업을 관찰하기 위해 유럽에 갔고, 베를린의 카메라 매장을 방문한 후 사진 렌즈에 대한 정보를 수집하는 데 시간을 할애했다. 마침내 견본을 입수하고 디자이너들은 일본으로 돌아갔는데, 이때가 진정한 투쟁의 시작이었다.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="a_1999" class="tabcontent">
+            <h4>Aim for the light</h4>
+            <span class="years">- 1999 - </span>
+            <img src="images/sub1/sub1_his4.jpg" alt="1917s">
+            <p class="his_subtit">"광학기기의 국내 생산과 <br> 광학기기의 원제조"</p>
+            <p class="his_text">20세기 초 일본이 근대화에 나서면서 유럽을 따라잡는 게 과제였다.
+                일본 산업의 발전은 모든 분야에서 절실한 필요성이었고, 첨단 기술이 중요한 광학 산업에서는 특히 시급한 문제였다.</p>
+            <div class="his_1917s">
+                <div class="h1917">
+                    <span>1917</span>
+                    <img src="images/sub1/sub1_his1_img1.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>니콘의 기원은, 닛폰 코가쿠 K.K.가 성립했다</strong></p>
+                    <p class="subtit_cont">당시 니콘 본사는 도쿄 도 고이시카와 구 하라마치 120번지(현립 하쿠산 4쵸메, 분쿄 구)에 있는 도쿄 게이키 회사 내에 있었다.</p>
+                </div> 
+                <div class="h1917">
+                    <span>1918</span>
+                    <img src="images/sub1/sub1_his1_img2.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>오이다이이치공장(현 오이공장)이 완공되어 광학유리 생산이 시작되었다.</strong></p>
+                    <p class="subtit_cont">1918년 이 회사는 광학유리 연구를 시작했으나 몇 가지 기술적 문제를 완전히 해결할 수 없게 되자 가동을 중단했다. 그러나 1922년, 국내 광기기의 생산을 공급하기 위한 광유리의 자급자족이 필요하게 되자 연구가 본격적으로 재개되었다.</p>
+                </div>
+                <div class="h1917">
+                    <span>1921</span>
+                    <img src="images/sub1/sub1_his1_img3.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>MIKRON 4x, 6x 초소형 쌍안경 시판</strong></p>
+                    <p class="subtit_cont">1921년형 MIKRON 초소형 쌍안경은 니콘이 개발, 설계, 제조한 최초의 쌍안형 모델 중 하나이다. 이들은 컴팩트함과 높은 기능성으로 호평을 받았으며, 1948년과 1997년 판매를 위해 복제된 이후 여전히 인기 있는 모델이다.</p>
+                </div>
+                <div class="h1917">
+                    <span>1932</span>
+                    <img src="images/sub1/sub1_his1_img4.jpg" alt="establish" class="sub1_his1_img1">
+                    <p class="subtit_subt"><strong>NIKKOR가 카메라 렌즈의 상표명으로 채택되었다.</strong></p>
+                    <p class="subtit_cont">NIKKOR 렌즈는 국내적으로 사진 렌즈를 제작하고 싶은 일본 디자이너들의 강한 열망에서 탄생했는데, 그 때까지 한국은 다른 나라에 의존해 왔다. 디자이너들은 광학 산업을 관찰하기 위해 유럽에 갔고, 베를린의 카메라 매장을 방문한 후 사진 렌즈에 대한 정보를 수집하는 데 시간을 할애했다. 마침내 견본을 입수하고 디자이너들은 일본으로 돌아갔는데, 이때가 진정한 투쟁의 시작이었다.</p>
+                </div>
+            </div>
+        </div>
+    
+        <a class="topMove" href="javascript:void(0);">
+            <span class="hidden">top</span>
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </article>
+<!--CONTENT END-->
+
+    <? include 'common/footer.html' ?>
+
+</div>
+
+</body>
+</html>

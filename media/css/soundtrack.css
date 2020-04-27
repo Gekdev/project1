@@ -1,0 +1,219 @@
+.imgback:before {
+    background: url(../images/back/back4.jpg) no-repeat center center;
+}
+
+/*###############################
+CLIP SECTION
+###############################*/
+
+.clip{
+    overflow: hidden;
+    background: rgba(0,0,0,0.6);
+    position: relative;
+}
+
+.clip::before{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    transform: translate(-50%, 0);
+    background: linear-gradient(135deg, #f6e3b0 0%,#daa75f 100%)
+}
+
+/*100%*/
+.clip_part_big{
+    position: relative;
+    cursor: pointer;
+    width: 80%;
+    margin: 10%;
+}
+
+.clip_part_big .subTitle{
+    position: relative;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 4%;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+}
+
+
+.clip_part_big .contentArea{
+    position: relative;
+    width: 90%;
+    margin: 30px auto
+}
+
+.clip_part_big .contentArea .imgPart .popup-youtube>img {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3)
+}
+
+.clip_part_big .contentArea p{
+    position: relative;
+    color: #fff;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.clip_part_big .playBnt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 110px;
+    height: 110px;
+    margin: -55px 0 0 -55px;
+    border-radius: 94px;
+    background: rgba(0,0,0,.6)
+}
+
+.clip_part_big .imgPart:hover .playBnt {
+    background: rgba(255,0,0,.6)
+}
+
+.clip_part_big .playBnt img {
+    position: relative;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    margin: -32px 0 0 -20px    
+}
+
+/*50%*/
+.sm_clip_wrap{
+    width: 80%;
+    margin: 10%;
+    overflow: hidden;
+}
+
+.clip_part{
+    width:50%; 
+    float: left;
+    margin-bottom: 100px
+}
+
+.clip_part .subTitle{
+    position: relative;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: #fff
+}
+
+.clip_part .contentArea {
+    position: relative;
+    width: 96%;
+    margin: 30px auto
+}
+
+.imgPart {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 30px
+}
+
+
+.clip_part .contentArea .imgPart .popup-youtube>img {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3)
+}
+
+.clip_part .contentArea p {
+    color: #fff;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.clip_part .playBnt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 110px;
+    height: 110px;
+    margin: -55px 0 0 -55px;
+    border-radius: 94px;
+    background: rgba(0,0,0,.6)
+}
+
+.clip_part .imgPart:hover .playBnt {
+    background: rgba(255,0,0,.6)
+}
+
+.clip_part .playBnt img {
+    position: relative;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    margin: -32px 0 0 -20px    
+}
+
+/*해상도 변경------------------------------------------------*/
+@media screen and (max-width:1280px) {    
+    .clip::before{
+        display: none;
+    }
+    
+    .clip_part_big{
+        width: 90%;
+        margin: 5%;
+        margin-bottom: 100px;
+    }
+    
+    .sm_clip_wrap{
+        width: 90%;
+        margin: 5%;
+        overflow: hidden;
+    }
+    
+}
+
+@media screen and (max-width:786px) {
+    .clip_part{
+        width:auto; float:none;
+    }
+    
+    .clip_part_big .contentArea {
+        width: 96%;
+    }
+    
+    
+
+}
+
+@media screen and (max-width:640px) {
+    .subTitle {
+        font-size: 28px
+    }
+    
+    .clip_part_big .subTitle{
+        font-size: 28px
+    }
+}
+
+@media screen and (max-width:480px) {
+    .clip_part .playBnt {
+        width: 95px;
+        height: 95px;
+        margin: -48px 0 0 -48px
+    }
+    
+    .clip_part .contentArea {
+        width: auto
+    }
+    
+    .clip_part_big .playBnt {
+        width: 95px;
+        height: 95px;
+        margin: -48px 0 0 -48px
+    }
+    
+    .clip_part_big .contentArea {
+        width: auto
+    }
+}
+
+

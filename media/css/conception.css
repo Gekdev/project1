@@ -1,0 +1,104 @@
+.imgback:before {
+    background: url(../images/back/back2.jpg) no-repeat center center;
+}
+
+.duo{
+    position: relative;
+    overflow: hidden;
+    background: rgba(0,0,0,0.6);
+    padding: 10% 0;
+}
+.duo::before{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    transform: translate(-50%, 0);
+    background: linear-gradient(135deg, #f6e3b0 0%,#daa75f 100%)
+}
+
+.grid-image-item, .grid--images .grid-sizer{
+    width: 20%;
+}
+
+.grid-image-item {
+    float: left;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.grid-image-item img{
+    border-radius: 3%;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.grid-image-item h4{
+    display: block;
+    position: relative;
+    width: 96%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+}
+
+.grid-image-item h4::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -45%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: 3px;
+    background: #f6e3b0;
+    background: linear-gradient(135deg, #f6e3b0 0%,#daa75f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e3b0', endColorstr='#daa75f',GradientType=1 );
+}
+
+.grid-image-item p{
+    display: block;
+    width: 80%;
+    font-size: 14px;
+    margin: 0 auto;
+    color: #ddd;
+}
+
+/*-------------------------------------------------------------------*/
+@media screen and (max-width:1024px){
+    .duo::before{
+        display: none;
+    }
+}
+@media screen and (max-width:1024px){
+    .grid-image-item,
+    .grid--images .grid-sizer{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .grid-image-item,
+    .grid--images .grid-sizer{ 
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .grid-image-item,
+    .grid--images .grid-sizer{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .grid-image-item,
+    .grid--images .grid-sizer{
+        width: 100%;
+    }
+}
